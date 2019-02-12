@@ -12,9 +12,9 @@ class QuizQuestionButton extends Component {
         });
     }
 
-    handleClick = () => {
-        this.props.clickHandler(this.props.button_text);
-    };
+    handleClick(){
+        return this.props.clickHandler(this.props.button_text);
+    }
 
     render() {
         return (

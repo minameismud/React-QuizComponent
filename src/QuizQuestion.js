@@ -14,11 +14,11 @@ class QuizQuestion extends Component {
         });
     }
 
-    handleClick = (buttonText) => {
-        this.props.quiz_question.answer === buttonText ?
+    handleClick(buttonText) {
+        return (this.props.quiz_question.answer === buttonText ?
             this.props.showNextQuestionHandler() :
-            {};
-    };
+            {});
+    }
 
     render() {
         return (
